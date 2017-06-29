@@ -141,7 +141,7 @@ void blink() {
   deltatime = timer - lasttime;
   lasttime = timer;
   //Serial.println(deltatime);
-  if (deltatime >900 && deltatime <2200) {
+  if (deltatime >800 && deltatime <2300) {
     servo1 = deltatime;
     //Serial.println(servo1);
     if (running) {
