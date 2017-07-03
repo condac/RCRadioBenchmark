@@ -133,7 +133,7 @@ void tests() {
   count = 0;
   count10 = 0;
   
-  Serial.println(" 10test done");
+  Serial.println(" 200 tests done");
 }
 
 void blink() {
@@ -141,6 +141,7 @@ void blink() {
   deltatime = timer - lasttime;
   lasttime = timer;
   //Serial.println(deltatime);
+  if (!digitalRead(interruptPin) ) {
   if (deltatime >800 && deltatime <2300) {
     servo1 = deltatime;
     //Serial.println(servo1);
@@ -150,5 +151,5 @@ void blink() {
       }
     }
   }
-  
+  }
 }
