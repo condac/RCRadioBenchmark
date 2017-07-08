@@ -42,12 +42,12 @@ sigma1 = np.std(dataArray, ddof = 1)
 median = statistics.median(dataArray)
 
 # the histogram of the data
-n, bins, patches = plt.hist(dataArray, 500, normed=1, facecolor='green', alpha=0.75)
-n2, bins2, patches2 = plt.hist(dataArray2, 500, normed=1, facecolor='blue', alpha=0.75)
+n, bins, patches = plt.hist(dataArray, 500, normed=1, facecolor='green', alpha=0.5)
+n2, bins2, patches2 = plt.hist(dataArray2, 500, normed=1, facecolor='blue', alpha=0.5)
 # add a 'best fit' line
 y = mlab.normpdf( bins, mu, sigma)
 y2 = mlab.normpdf( bins2, mu2, sigma2)
-l = plt.plot(bins, y, 'r--', linewidth=2)
+l = plt.plot(bins, y, 'g--', linewidth=2)
 l = plt.plot(bins2, y2, 'b--', linewidth=2)
 
 #plot

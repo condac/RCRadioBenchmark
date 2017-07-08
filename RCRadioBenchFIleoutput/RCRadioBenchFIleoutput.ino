@@ -75,7 +75,7 @@ void tests() {
   
   running = true;
   while (running) {
-    if (servo1 >1100) {
+    if (servo1 >1200) {
       digitalWrite(ledPin, LOW);
       stoptime = timer;
       running = false;
@@ -146,7 +146,7 @@ void blink() {
     servo1 = deltatime;
     //Serial.println(servo1);
     if (running) {
-      if(deltatime > 1100) {
+      if(deltatime > 1200) {
         digitalWrite(ledPin, LOW);
       }
     }
